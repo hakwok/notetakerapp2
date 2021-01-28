@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         table.dataSource = self
+        self.title = "SWEEZY Notes"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
